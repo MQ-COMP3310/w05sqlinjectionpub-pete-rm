@@ -24,3 +24,9 @@ Mar 25, 2025 1:53:58 PM workshop05code.App main
 SEVERE: Ignored unacceptable input: Mark
 Mar 25, 2025 1:54:01 PM workshop05code.App main
 WARNING: Ignored input as word not in list: ghjk
+Mar 28, 2025 1:55:28 PM workshop05code.App main
+SEVERE: Ignored unacceptable input: CORE
+Mar 28, 2025 1:55:28 PM workshop05code.App main
+SEVERE: Ignored unacceptable input: Golf
+Mar 28, 2025 1:55:28 PM workshop05code.App main
+SEVERE: Ignored unacceptable input: Mark

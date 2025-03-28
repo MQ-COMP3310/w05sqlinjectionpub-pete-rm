@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
@@ -36,15 +37,15 @@ public class App {
 
         wordleDatabaseConnection.createNewDatabase("words.db");
         if (wordleDatabaseConnection.checkIfConnectionDefined()) {
-            System.out.println("Wordle created and connected.");
+            logger.info("Connection to database established.");
         } else {
-            System.out.println("Not able to connect. Sorry!");
+            logger.info("Not able to Connect. Sorry!");
             return;
         }
         if (wordleDatabaseConnection.createWordleTables()) {
-            System.out.println("Wordle structures in place.");
+            logger.info("Worlde structures in placed");
         } else {
-            System.out.println("Not able to launch. Sorry!");
+            logger.info("Not able to launch. Sorry!");
             return;
         }
 
@@ -66,8 +67,8 @@ public class App {
             }
 
         } catch (IOException e) {
-            System.out.println("Not able to load . Sorry!");
-            System.out.println(e.getMessage());
+            logger.info("Not able to Load.Sorry! " + e.getMessage());
+          
             return;
         }
 
